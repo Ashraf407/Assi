@@ -20,12 +20,12 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	    ExtentProperties extentProperties = ExtentProperties.INSTANCE;
 	    extentProperties.setReportPath("output/myreport.html");
 	}
-	@AfterClass
+	/*@AfterClass
     public static void teardown() {
 	  Reporter.loadXMLConfig(new File("C:\\Users\\ASHRAF\\Desktop\\Selenium\\ExtCucuExamples\\extentConfig.xml"));
       Reporter.setSystemInfo("user", System.getProperty("user.name"));
       Reporter.setSystemInfo("os", "Mac OSX");
-      Reporter.setTestRunnerOutput("Sample test runner output message");
+      Reporter.setTestRunnerOutput("Sample test runner output message");*/
 	
 	
 	}

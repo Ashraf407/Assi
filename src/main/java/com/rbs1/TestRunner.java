@@ -44,6 +44,17 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 
 	}
+    @AfterClass
+    public static void teardown4() {
+        Reporter.loadXMLConfig(new File("C:\\Users\\ASHRAF\\Desktop\\Selenium\\ExtCucuExamples\\extentConfig.xml"));
+        Reporter.setSystemInfo("user", System.getProperty("user.name"));
+        Reporter.setSystemInfo("os", "Mac OSX");
+        Reporter.setTestRunnerOutput("Sample test runner output message");
+        Reporter.setSystemInfo("os", "Mac OSX");
+        Reporter.setTestRunnerOutput("Sample test runner output message");
+
+
+    }
 	@AfterClass
 	public static void teardown3() {
 		Reporter.loadXMLConfig(new File("C:\\Users\\ASHRAF\\Desktop\\Selenium\\ExtCucuExamples\\extentConfig.xml"));

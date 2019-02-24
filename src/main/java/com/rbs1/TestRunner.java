@@ -67,7 +67,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 	}
 	@AfterClass
-	public static void teardown12() {
+	public static void teardown15() {
 		Reporter.loadXMLConfig(new File("C:\\Users\\ASHRAF\\Desktop\\Selenium\\ExtCucuExamples\\extentConfig.xml"));
 		Reporter.setSystemInfo("user", System.getProperty("user.name"));
 		Reporter.setSystemInfo("os", "Mac OSX");
@@ -77,8 +77,11 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 
 	}
+
+
 	@AfterClass
-	public static void teardown6() {
+	public static void teardown16() {
+
 		Reporter.loadXMLConfig(new File("C:\\Users\\ASHRAF\\Desktop\\Selenium\\ExtCucuExamples\\extentConfig.xml"));
 		Reporter.setSystemInfo("user", System.getProperty("user.name"));
 		Reporter.setSystemInfo("os", "Mac OSX");

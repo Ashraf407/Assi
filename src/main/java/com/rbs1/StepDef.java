@@ -1,6 +1,6 @@
 package com.rbs1;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +32,23 @@ public class StepDef {
 	
 		Thread.sleep(1000);
 		
+	}
+	@Given("User is on Home Page2")
+	public void user_is_on_Home_Page1() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Personal\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+
+	}
+
+	@When("User Navigate to LogIn Page2")
+	public void user_Navigate_to_LogIn_Page1() throws InterruptedException {
+		driver.get("http://spicejet.com/");
+		Reporter.addStepLog("My test addStepLog message");
+		Reporter.addScenarioLog("This is scenario log");
+		driver.manage().window().maximize();
+
+		Thread.sleep(1000);
+
 	}
 
 	@When("User enters UserName and Password2")

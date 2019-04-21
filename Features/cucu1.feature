@@ -19,3 +19,10 @@
               When User Navigate to LogIn Page2
               And User enters UserName and Password2
                  Then Message displayed Login Successfully2
+
+                 @ReGression
+                             Feature: Login gmail account
+                             Scenario: Successful Login with Valid Credentials
+                               When User Navigate to LogIn Page2
+                               And User enters UserName and Password2
+                                  Then Message displayed Login Successfully2
